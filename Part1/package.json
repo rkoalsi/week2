@@ -1,5 +1,8 @@
 {
   "name": "hardhat-project",
+  "scripts": {
+    "test": "rm -rf circuits/circuit_js circuits/circuit_0000.zkey circuits/circuit_final.zkey circuits/circuit.r1cs circuits/circuit.sym circuits/verification_key.json; sh scripts/compile-circuit.sh && node scripts/bump-solidity.js && npx hardhat test"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",

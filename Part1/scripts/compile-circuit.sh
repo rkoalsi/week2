@@ -1,5 +1,5 @@
 #!/bin/bash
-
+rm -rf circuits/circuit_js circuits/circuit_0000.zkey circuits/circuit_final.zkey circuits/circuit.r1cs circuits/circuit.sym circuits/verification_key.json
 cd circuits
 
 if [ -f ./powersOfTau28_hez_final_10.ptau ]; then
